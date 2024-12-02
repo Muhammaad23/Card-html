@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credit Card Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="card">
+      <h4 class="card-h">BANK NAME</h4>
+      <img class="card-images" src="./images/card_images.png" alt="">
+      <div class="card-front">
+        <div style="margin-bottom: 13px;" id="card-number" type="text">#### #### #### ####</div>
+        <div class="card-flex">
+        <div class="card-holder">
+          <span>Card Holder</span>
+          <div id="card-holder">FULL NAME</div>
+        </div>
+        <div class="card-expiration">
+          <span>Expires</span>
+          <div id="card-expiration">MM/YY</div>
+        </div>
+    </div>
+      </div>
+    </div>
+
+    <form class="card-form">
+      <label>Card Number</label>
+      <input type="text" id="input-number" maxlength="19" placeholder="Card Number" />
+
+      <label>Card Holder</label>
+      <input type="text" id="input-holder" placeholder="Card Holder Name" />
+
+      <div class="expiration-cvv">
+        <div>
+          <label>Expiration Date</label>
+          <select id="input-month">
+            <option value="MM">Month</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <select id="input-year">
+            <option value="YY">Year</option>
+            <option value="24">2024</option>
+            <option value="25">2025</option>
+            <option value="26">2026</option>
+            <option value="27">2027</option>
+          </select>
+        </div>
+
+        <div>
+          <label>CVV</label>
+          <input type="text" id="input-cvv" maxlength="3" placeholder="CVV" />
+        </div>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
